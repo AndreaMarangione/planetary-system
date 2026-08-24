@@ -1,31 +1,188 @@
-<div align='center'>
+<div align="center">
 
-<h1>Universe Interactive Web Site 🚀</h1>
-<p>Benvenuto nel fantastico mondo dell'universo! Esplora il nostro sito interattivo e scopri il sistema solare come non l'hai mai visto prima. Osserva i pianeti mentre si muovono in modo realistico, riflettendo il vero movimento del sistema solare. Clicca su ciascun pianeta e lasciati trasportare in un viaggio informativo. Una card dettagliata apparirà, svelando curiosità affascinanti sul pianeta selezionato. Dalla dimensione alla composizione atmosferica, impara tutto ciò che c'è da sapere in modo divertente e coinvolgente. Sarai affascinato dalla bellezza dell'universo mentre esplori la vastità dello spazio. Divertiti a imparare e sperimentare le meraviglie dei nostri pianeti in un modo unico e coinvolgente!</p>
+<img src="assets/screen/screen2.png" alt="Welcome to the Universe — animated solar system" width="900">
 
-<h4> <a href=https://epicode-ccc.vercel.app/>View Demo</a> <span> · </span> <a href="https://github.com/AndreaMarangione/Epicode-CCC/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/AndreaMarangione/Epicode-CCC/issues"> Request Feature </a> </h4>
+# Planetary System
 
+**An interactive, animated model of the Solar System — built with plain HTML, CSS and JavaScript. No frameworks, no build step.**
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://epicode-ccc.vercel.app/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-yellow.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0)
+
+[**View Live Demo**](https://epicode-ccc.vercel.app/) · [Report a Bug](https://github.com/AndreaMarangione/planetary-system/issues) · [Request a Feature](https://github.com/AndreaMarangione/planetary-system/issues)
 
 </div>
 
-# Table of Contents
+---
 
-- [Screenshots](#screenshots)
+## Table of Contents
+
+- [About the Project](#about-the-project)
+- [Preview](#preview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [How It Works](#how-it-works)
+- [Roadmap](#roadmap)
 - [Contributing](#contributing)
+- [Contributors](#contributors)
 - [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-## Screenshots  
+---
 
-![App Screenshot](https://raw.githubusercontent.com/giacomosx/Epicode-CCC/main/assets/screen/screen.png)
-![App Screenshot](https://raw.githubusercontent.com/giacomosx/Epicode-CCC/main/assets/screen/screen2.png)
+## About the Project
+
+**Planetary System** is a single-page web experience that puts the Sun and the eight planets in motion. Each body orbits on its own CSS-driven timing and spins on its axis; hitting pause freezes the system, aligns the planets and turns each one into a clickable target. Selecting a planet opens an information card with an image, a short profile and a link to further reading.
+
+This is an **educational project**, written at the end of 2023 while attending a web development course. It was the first repository of the author and is deliberately kept in its original form: no framework, no bundler, no package manager — just three script files, one stylesheet and one HTML page. It remains published as a snapshot of that stage of the learning path, and as a compact demonstration of what can be done with the browser platform alone.
+
+> **Note on language** — the interface copy, the planet descriptions and the reference links are in **Italian**. Internationalisation is listed in the [Roadmap](#roadmap).
+
+## Preview
+
+**Orbital view** — the system in motion, each body on its own orbit.
+
+![Animated solar system in motion](assets/screen/screen2.png)
+
+**Paused view** — orbits stop, planets align and labels become interactive; selecting one opens its information card.
+
+![Paused system with planet labels and an open information card](assets/screen/screen.png)
+
+## Features
+
+- **Orbital animation** — every container rotates with an independent `animation-duration`, so inner bodies complete their orbit faster than outer ones. A second animation on the planet image itself produces the axial spin.
+- **Play / Pause controls** — pausing stops the animation, repositions each body along a horizontal alignment and exposes a labelled button for every planet. Resuming closes any open card and returns the system to orbit.
+- **Runtime-generated information cards** — clicking a planet (or its label) builds a card in the DOM from a single data source: cover image, title, description and an external reference link, with its own dismiss button.
+- **Single source of truth** — planet names, copy, image paths, reference URLs and both the static and dynamic layout coordinates live in one `globalData` object, so content and positioning are edited in one place.
+- **Responsive layout** — three breakpoints cover mobile, tablet and desktop viewports.
+- **Preloader** — a loading indicator fades out on `window.onload` so the scene never appears half-rendered.
+- **No build required** — the page runs straight from the filesystem; the only external assets are two CDN scripts.
+
+## Tech Stack
+
+| Layer | Technology |
+| --- | --- |
+| Markup | HTML5, semantic sections and ARIA attributes |
+| Styling | CSS3 — custom keyframes, absolute positioning, media queries |
+| Behaviour | Vanilla JavaScript (ES6), direct DOM manipulation |
+| Icons | [Ionicons 7](https://ionic.io/ionicons) via CDN |
+| Repository widget | [GitHub Buttons](https://buttons.github.io/) via CDN |
+| Hosting | [Vercel](https://vercel.com/) |
+
+## Project Structure
+
+```
+planetary-system/
+├── assets/
+│   ├── imgCard/            # Cover images used inside the information cards
+│   ├── screen/             # Screenshots used in this README
+│   ├── bg.jpg              # Starfield background
+│   ├── Universe-Logo.png   # Header logo
+│   └── *.png               # Sprites for the Sun and the eight planets
+├── css/
+│   └── style.css           # Layout, orbital keyframes, responsive breakpoints
+├── js/
+│   ├── globaldata.js       # DOM references, preloader, planet dataset
+│   ├── cards.js            # Information card creation and teardown
+│   └── animation.js        # Play / pause controls and click handlers
+├── index.html              # Single entry point
+├── LICENSE
+└── readme.md
+```
+
+## Getting Started
+
+No toolchain, no dependencies to install.
+
+**Prerequisites:** a modern browser. [Git](https://git-scm.com/) if you want to clone rather than download.
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/AndreaMarangione/planetary-system.git
+```
+
+**2. Enter the project folder**
+
+```bash
+cd planetary-system
+```
+
+**3. Open it**
+
+All paths are relative, so opening `index.html` directly in a browser works:
+
+```bash
+open index.html          # macOS
+xdg-open index.html      # Linux
+start index.html         # Windows
+```
+
+Alternatively, serve it over HTTP — useful if you want to test with the browser devtools throttling or on another device on your network:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then visit `http://localhost:8080`.
+
+## How It Works
+
+**`globaldata.js`** — collects the DOM references shared across the other scripts, handles the preloader fade-out, and exposes `globalData.planets`: an array where each entry holds the body's identifier, display title, description, card image path, reference URL, and the coordinates it should occupy in both the paused (`staticPosition`) and orbiting (`dynamicPosition`) states.
+
+**`animation.js`** — wires the two footer controls. Pause clears the `animation-name` on every orbit container and applies the static coordinates, then reveals the planet labels at their per-body offsets and switches the cursor to `pointer`. Play does the reverse, restoring the `rotation` keyframe after a short delay so the repositioning transition can finish first. Both the planet sprites and their labels carry an `aria-valuetext` identifier, which is the key used to look the body up in the dataset when clicked.
+
+**`cards.js`** — receives that identifier, removes any card currently on screen, then constructs the new one element by element (image, heading, paragraph, outbound link, close button) and appends it to the card section. Opening and closing are driven by opacity and offset changes, with the node removed from the DOM after the transition.
+
+**`style.css`** — the orbital motion is a single `rotation` keyframe from `0deg` to `360deg`, reused everywhere. What differentiates the bodies is the `animation-duration` and the container width, which sets the orbital radius. Applying the same keyframe to the nested planet image, at a different duration, gives the axial spin.
+
+## Roadmap
+
+Ideas for anyone who wants to build on this, listed roughly by impact:
+
+- [ ] Extract all UI copy into a locale layer and ship an English translation alongside the Italian one
+- [ ] Replace direct inline style mutation with CSS class toggles and data attributes
+- [ ] Scale orbital radii and periods against real astronomical values, with a configurable time multiplier
+- [ ] Add full keyboard navigation and visible focus states for the planet controls
+- [ ] Honour `prefers-reduced-motion` by defaulting to the paused, aligned view
+- [ ] Vendor the icon set locally to remove the runtime CDN dependency
+- [ ] Add moons and an asteroid belt
+
+Suggestions are welcome — open an [issue](https://github.com/AndreaMarangione/planetary-system/issues) if you have one.
 
 ## Contributing
 
-<a href="https://github.com/AndreaMarangione/Epicode-CCC/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
+Contributions are always welcome.
 
-Contributions are always welcome!
+1. Fork the repository
+2. Create a feature branch — `git checkout -b feature/your-feature`
+3. Commit your changes — `git commit -m "Add your feature"`
+4. Push the branch — `git push origin feature/your-feature`
+5. Open a Pull Request
 
+For substantial changes, please open an issue first so the direction can be discussed. Given the nature of the project, please keep the codebase dependency-free.
+
+## Contributors
+
+<a href="https://github.com/AndreaMarangione/planetary-system/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AndreaMarangione/planetary-system" alt="Contributors" />
+</a>
+
+Built by [@AndreaMarangione](https://github.com/AndreaMarangione) and [@giacomosx](https://github.com/giacomosx).
 
 ## License
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://choosealicense.com/licenses/gpl-3.0/)
+Distributed under the **GNU General Public License v3.0**. See [`LICENSE`](LICENSE) for the full text.
+
+## Acknowledgements
+
+- [Ionicons](https://ionic.io/ionicons) — interface icons
+- [GitHub Buttons](https://buttons.github.io/) — repository widget
+- [Shields.io](https://shields.io/) — README badges
+- [contrib.rocks](https://contrib.rocks/) — contributors graphic
+- [Vercel](https://vercel.com/) — hosting
