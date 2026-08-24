@@ -23,7 +23,7 @@
 This is an **educational project**, written at the end of 2023 while attending a web development course. It was the first repository of the author and is deliberately kept in its original form: no framework, no bundler, no package manager — just three script files, one stylesheet and one HTML page. It remains published as a snapshot of that stage of the learning path, and as a compact demonstration of what can be done with the browser platform alone.
 
 > [!NOTE]
-> the interface copy, the planet descriptions and the reference links are in **Italian**.
+> The interface copy, the planet descriptions and the reference links are in **Italian**.
 
 ---
 
