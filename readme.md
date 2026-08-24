@@ -93,42 +93,6 @@ planetary-system/
 └── readme.md
 ```
 
-## Getting Started
-
-No toolchain, no dependencies to install.
-
-**Prerequisites:** a modern browser. [Git](https://git-scm.com/) if you want to clone rather than download.
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/AndreaMarangione/planetary-system.git
-```
-
-**2. Enter the project folder**
-
-```bash
-cd planetary-system
-```
-
-**3. Open it**
-
-All paths are relative, so opening `index.html` directly in a browser works:
-
-```bash
-open index.html          # macOS
-xdg-open index.html      # Linux
-start index.html         # Windows
-```
-
-Alternatively, serve it over HTTP — useful if you want to test with the browser devtools throttling or on another device on your network:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
-
 ## How It Works
 
 **`globaldata.js`** — collects the DOM references shared across the other scripts, handles the preloader fade-out, and exposes `globalData.planets`: an array where each entry holds the body's identifier, display title, description, card image path, reference URL, and the coordinates it should occupy in both the paused (`staticPosition`) and orbiting (`dynamicPosition`) states.
