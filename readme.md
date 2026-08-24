@@ -1,6 +1,6 @@
 <div align="center">
 
-# Planetary System
+# planetary-system
 
 **An interactive, animated model of the Solar System — built with plain HTML, CSS and JavaScript. No frameworks, no build step.**
 
