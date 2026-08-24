@@ -52,24 +52,11 @@ This is an **educational project**, written at the end of 2023 while attending a
 
 ## Architecture
 
-```
-planetary-system/
-├── assets/
-│   ├── imgCard/            # Cover images used inside the information cards
-│   ├── screen/             # Screenshots used in this README
-│   ├── bg.jpg              # Starfield background
-│   ├── Universe-Logo.png   # Header logo
-│   └── *.png               # Sprites for the Sun and the eight planets
-├── css/
-│   └── style.css           # Layout, orbital keyframes, responsive breakpoints
-├── js/
-│   ├── globaldata.js       # DOM references, preloader, planet dataset
-│   ├── cards.js            # Information card creation and teardown
-│   └── animation.js        # Play / pause controls and click handlers
-├── index.html              # Single entry point
-├── LICENSE
-└── readme.md
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/screens/architecture.png">
+  <img alt="Architecture" src="assets/screens/architecture.png">
+</picture>
+
 ---
 
 ## Contributors
