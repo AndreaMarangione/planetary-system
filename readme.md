@@ -10,7 +10,7 @@
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://epicode-ccc.vercel.app/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-yellow.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0)
 
-[**View Live Demo**](https://epicode-ccc.vercel.app/) · [Report a Bug](https://github.com/AndreaMarangione/planetary-system/issues) · [Request a Feature](https://github.com/AndreaMarangione/planetary-system/issues)
+[**View Live Demo**](https://epicode-ccc.vercel.app/)
 
 </div>
 
