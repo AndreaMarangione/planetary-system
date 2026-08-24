@@ -53,8 +53,8 @@ This is an **educational project**, written at the end of 2023 while attending a
 ## Architecture
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/screens/architecture.png">
-  <img alt="Architecture" src="assets/screens/architecture.png">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/screen/architecture.png">
+  <img alt="Architecture" src="assets/screen/architecture.png">
 </picture>
 
 ---
