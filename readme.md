@@ -14,6 +14,8 @@
 
 </div>
 
+---
+
 ## About the Project
 
 **Planetary System** is a single-page web experience that puts the Sun and the eight planets in motion. Each body orbits on its own CSS-driven timing and spins on its axis; hitting pause freezes the system, aligns the planets and turns each one into a clickable target. Selecting a planet opens an information card with an image, a short profile and a link to further reading.
@@ -21,6 +23,8 @@
 This is an **educational project**, written at the end of 2023 while attending a web development course. It was the first repository of the author and is deliberately kept in its original form: no framework, no bundler, no package manager — just three script files, one stylesheet and one HTML page. It remains published as a snapshot of that stage of the learning path, and as a compact demonstration of what can be done with the browser platform alone.
 
 > **Note on language** — the interface copy, the planet descriptions and the reference links are in **Italian**.
+
+---
 
 ## Preview
 
@@ -32,6 +36,8 @@ This is an **educational project**, written at the end of 2023 while attending a
 
 ![Paused system with planet labels and an open information card](assets/screen/screen2.png)
 
+---
+
 ## Features
 
 - **Orbital animation** — every container rotates with an independent `animation-duration`, so inner bodies complete their orbit faster than outer ones. A second animation on the planet image itself produces the axial spin.
@@ -41,6 +47,8 @@ This is an **educational project**, written at the end of 2023 while attending a
 - **Responsive layout** — three breakpoints cover mobile, tablet and desktop viewports.
 - **Preloader** — a loading indicator fades out on `window.onload` so the scene never appears half-rendered.
 - **No build required** — the page runs straight from the filesystem; the only external assets are two CDN scripts.
+
+---
 
 ## Architecture
 
@@ -62,6 +70,7 @@ planetary-system/
 ├── LICENSE
 └── readme.md
 ```
+---
 
 ## Contributors
 
@@ -70,6 +79,8 @@ planetary-system/
 </a>
 
 Built by [@AndreaMarangione](https://github.com/AndreaMarangione) and [@giacomosx](https://github.com/giacomosx).
+
+---
 
 ## License
 
