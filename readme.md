@@ -63,16 +63,6 @@ planetary-system/
 └── readme.md
 ```
 
-## How It Works
-
-**`globaldata.js`** — collects the DOM references shared across the other scripts, handles the preloader fade-out, and exposes `globalData.planets`: an array where each entry holds the body's identifier, display title, description, card image path, reference URL, and the coordinates it should occupy in both the paused (`staticPosition`) and orbiting (`dynamicPosition`) states.
-
-**`animation.js`** — wires the two footer controls. Pause clears the `animation-name` on every orbit container and applies the static coordinates, then reveals the planet labels at their per-body offsets and switches the cursor to `pointer`. Play does the reverse, restoring the `rotation` keyframe after a short delay so the repositioning transition can finish first. Both the planet sprites and their labels carry an `aria-valuetext` identifier, which is the key used to look the body up in the dataset when clicked.
-
-**`cards.js`** — receives that identifier, removes any card currently on screen, then constructs the new one element by element (image, heading, paragraph, outbound link, close button) and appends it to the card section. Opening and closing are driven by opacity and offset changes, with the node removed from the DOM after the transition.
-
-**`style.css`** — the orbital motion is a single `rotation` keyframe from `0deg` to `360deg`, reused everywhere. What differentiates the bodies is the `animation-duration` and the container width, which sets the orbital radius. Applying the same keyframe to the nested planet image, at a different duration, gives the axial spin.
-
 ## Contributors
 
 <a href="https://github.com/AndreaMarangione/planetary-system/graphs/contributors">
