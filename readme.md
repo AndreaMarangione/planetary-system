@@ -26,11 +26,11 @@ This is an **educational project**, written at the end of 2023 while attending a
 
 **Orbital view** — the system in motion, each body on its own orbit.
 
-![Animated solar system in motion](assets/screen/screen2.png)
+![Animated solar system in motion](assets/screen/screen.png)
 
 **Paused view** — orbits stop, planets align and labels become interactive; selecting one opens its information card.
 
-![Paused system with planet labels and an open information card](assets/screen/screen.png)
+![Paused system with planet labels and an open information card](assets/screen/screen2.png)
 
 ## Features
 
