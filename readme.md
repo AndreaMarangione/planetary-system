@@ -42,17 +42,6 @@ This is an **educational project**, written at the end of 2023 while attending a
 - **Preloader** — a loading indicator fades out on `window.onload` so the scene never appears half-rendered.
 - **No build required** — the page runs straight from the filesystem; the only external assets are two CDN scripts.
 
-## Tech Stack
-
-| Layer | Technology |
-| --- | --- |
-| Markup | HTML5, semantic sections and ARIA attributes |
-| Styling | CSS3 — custom keyframes, absolute positioning, media queries |
-| Behaviour | Vanilla JavaScript (ES6), direct DOM manipulation |
-| Icons | [Ionicons 7](https://ionic.io/ionicons) via CDN |
-| Repository widget | [GitHub Buttons](https://buttons.github.io/) via CDN |
-| Hosting | [Vercel](https://vercel.com/) |
-
 ## Project Structure
 
 ```
