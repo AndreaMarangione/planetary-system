@@ -84,32 +84,6 @@ planetary-system/
 
 **`style.css`** — the orbital motion is a single `rotation` keyframe from `0deg` to `360deg`, reused everywhere. What differentiates the bodies is the `animation-duration` and the container width, which sets the orbital radius. Applying the same keyframe to the nested planet image, at a different duration, gives the axial spin.
 
-## Roadmap
-
-Ideas for anyone who wants to build on this, listed roughly by impact:
-
-- [ ] Extract all UI copy into a locale layer and ship an English translation alongside the Italian one
-- [ ] Replace direct inline style mutation with CSS class toggles and data attributes
-- [ ] Scale orbital radii and periods against real astronomical values, with a configurable time multiplier
-- [ ] Add full keyboard navigation and visible focus states for the planet controls
-- [ ] Honour `prefers-reduced-motion` by defaulting to the paused, aligned view
-- [ ] Vendor the icon set locally to remove the runtime CDN dependency
-- [ ] Add moons and an asteroid belt
-
-Suggestions are welcome — open an [issue](https://github.com/AndreaMarangione/planetary-system/issues) if you have one.
-
-## Contributing
-
-Contributions are always welcome.
-
-1. Fork the repository
-2. Create a feature branch — `git checkout -b feature/your-feature`
-3. Commit your changes — `git commit -m "Add your feature"`
-4. Push the branch — `git push origin feature/your-feature`
-5. Open a Pull Request
-
-For substantial changes, please open an issue first so the direction can be discussed. Given the nature of the project, please keep the codebase dependency-free.
-
 ## Contributors
 
 <a href="https://github.com/AndreaMarangione/planetary-system/graphs/contributors">
