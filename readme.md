@@ -42,7 +42,7 @@ This is an **educational project**, written at the end of 2023 while attending a
 - **Preloader** — a loading indicator fades out on `window.onload` so the scene never appears half-rendered.
 - **No build required** — the page runs straight from the filesystem; the only external assets are two CDN scripts.
 
-## Project Structure
+## Architecture
 
 ```
 planetary-system/
