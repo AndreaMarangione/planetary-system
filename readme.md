@@ -74,11 +74,3 @@ Built by [@AndreaMarangione](https://github.com/AndreaMarangione) and [@giacomos
 ## License
 
 Distributed under the **GNU General Public License v3.0**. See [`LICENSE`](LICENSE) for the full text.
-
-## Acknowledgements
-
-- [Ionicons](https://ionic.io/ionicons) — interface icons
-- [GitHub Buttons](https://buttons.github.io/) — repository widget
-- [Shields.io](https://shields.io/) — README badges
-- [contrib.rocks](https://contrib.rocks/) — contributors graphic
-- [Vercel](https://vercel.com/) — hosting
