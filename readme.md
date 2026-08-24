@@ -14,25 +14,6 @@
 
 </div>
 
----
-
-## Table of Contents
-
-- [About the Project](#about-the-project)
-- [Preview](#preview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [How It Works](#how-it-works)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
----
-
 ## About the Project
 
 **Planetary System** is a single-page web experience that puts the Sun and the eight planets in motion. Each body orbits on its own CSS-driven timing and spins on its axis; hitting pause freezes the system, aligns the planets and turns each one into a clickable target. Selecting a planet opens an information card with an image, a short profile and a link to further reading.
