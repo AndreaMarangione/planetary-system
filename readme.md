@@ -8,7 +8,6 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript%20ES6-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Ionicons](https://img.shields.io/badge/Ionicons-3880FF?style=flat-square&logo=ionic&logoColor=white)
-![License](https://img.shields.io/badge/GPL--3.0-EAB308?style=flat-square)
 
 [**View Live Demo**](https://epicode-ccc.vercel.app/)
 
