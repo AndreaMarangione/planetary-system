@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="assets/screen/screen2.png" alt="Welcome to the Universe — animated solar system" width="900">
-
 # Planetary System
 
 **An interactive, animated model of the Solar System — built with plain HTML, CSS and JavaScript. No frameworks, no build step.**
